@@ -1,54 +1,60 @@
-<p id="notice"><%= notice %></p>
+<% provide(:title, @user.first_name) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+	    <%= @user.first_name %><%= @user.last_name %>
+	  </h1>
 
-<p>
-  <strong>Fisrt name:</strong>
-  <%= @user.fisrt_name %>
-</p>
+		<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
+		<p>
+		  <strong>First name:</strong>
+		  <%= @user.first_name %>
+		</p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+		<p>
+		  <strong>Last name:</strong>
+		  <%= @user.last_name %>
+		</p>
 
-<p>
-  <strong>Address1:</strong>
-  <%= @user.address1 %>
-</p>
+		<p>
+		  <strong>Email:</strong>
+		  <%= @user.email %>
+		</p>
 
-<p>
-  <strong>Address2:</strong>
-  <%= @user.address2 %>
-</p>
+		<p>
+		  <strong>Address1:</strong>
+		  <%= @user.address1 %>
+		</p>
 
-<p>
-  <strong>City:</strong>
-  <%= @user.city %>
-</p>
+		<p>
+		  <strong>Address2:</strong>
+		  <%= @user.address2 %>
+		</p>
 
-<p>
-  <strong>State:</strong>
-  <%= @user.state %>
-</p>
+		<p>
+		  <strong>City:</strong>
+		  <%= @user.city %>
+		</p>
 
-<p>
-  <strong>Zip:</strong>
-  <%= @user.zip %>
-</p>
+		<p>
+		  <strong>State:</strong>
+		  <%= @user.state %>
+		</p>
 
-<p>
-  <strong>Phone:</strong>
-  <%= @user.phone %>
-</p>
+		<p>
+		  <strong>Zip:</strong>
+		  <%= @user.zip %>
+		</p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @user.title %>
-</p>
+		<p>
+		  <strong>Phone:</strong>
+		  <%= @user.phone %>
+		</p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+		</section>
+  </aside>
+</div>
+		<%= link_to 'Edit', edit_user_path(@user) %> |
+		<%= link_to 'Back', users_path %>
